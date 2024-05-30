@@ -1,11 +1,25 @@
 header {
-    background: white;
+    align-items: flex-end;
+    background-color: #fff;
+    background-image: url("../images/logo.png");
+    background-repeat: no-repeat;
+    background-position: 20px 50%;
+    display: flex;
     height: 70px;
+    flex-direction: column;
+    justify-content: center;
     width: 100%;
-    border-bottom: 1px solid #CCCCCC;
+    border-bottom: 1px solid #ccc;
 }
-header .logo {
-    background: url("../images/logo.png") no-repeat;
-    left: 20px;
-    height: 100%;
+
+header #api_status {
+    margin-right: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #ccc;
+}
+
+header #api_status.available {
+    background-color: #ff545f;
 }
